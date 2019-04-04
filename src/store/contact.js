@@ -1,9 +1,6 @@
 import axios from 'axios'
 
 export default {
-  mutations: {
-
-  },
   actions: {
     async sendLetter ({ commit }, { subject, message, email }) {
       commit('clearError')

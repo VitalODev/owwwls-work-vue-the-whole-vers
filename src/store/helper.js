@@ -15,10 +15,10 @@ export default {
     }
   },
   actions: {
-    setLoading ({ commit }, payload) {
+    setLoading ({ commit }) {
       commit('setLoading')
     },
-    setError ({ commit }, payload) {
+    setError ({ commit }) {
       commit('setError')
     },
     clearError ({ commit }) {

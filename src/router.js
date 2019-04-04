@@ -5,7 +5,6 @@ import LogIn from '@/components/LogIn'
 import LogOut from '@/components/LogOut'
 import Contact from '@/components/Contact'
 import Info from '@/components/Info'
-import Blog from '@/components/Blog'
 
 Vue.use(Router)
 
@@ -32,10 +31,6 @@ export default new Router({
     {
       path: '/info',
       component: Info
-    },
-    {
-      path: '/dev',
-      component: Blog
     }
   ]
 })

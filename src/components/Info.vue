@@ -100,7 +100,6 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
 
-        <!--
         <v-snackbar
           v-model="snackbar"
           :multi-line="true"
@@ -117,7 +116,6 @@
             Close
           </v-btn>
         </v-snackbar>
-        -->
       </v-flex>
     </v-layout>
   </v-container>

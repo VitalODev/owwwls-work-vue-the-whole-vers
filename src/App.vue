@@ -178,11 +178,11 @@ export default {
     },
     computedStyle () {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return { fontSizeH1: '1.7em', fontSizeP: '1.3em', widthCaption: '100%' }
-        case 'sm': return { fontSizeH1: '2em', fontSizeP: '1.5em', widthCaption: '90%' }
-        case 'md': return { fontSizeH1: '2.2em', fontSizeP: '1.7em', widthCaption: '80%' }
-        case 'lg': return { fontSizeH1: '2.7em', fontSizeP: '2em', widthCaption: '77%' }
-        case 'xl': return { fontSizeH1: '3em', fontSizeP: '2.2em', widthCaption: '75%' }
+        case 'xs': return { fontSizeH1: '1.4em', fontSizeP: '1.3em', widthCaption: '100%' }
+        case 'sm': return { fontSizeH1: '1.5em', fontSizeP: '1.5em', widthCaption: '90%' }
+        case 'md': return { fontSizeH1: '1.6em', fontSizeP: '1.7em', widthCaption: '80%' }
+        case 'lg': return { fontSizeH1: '1.7em', fontSizeP: '2em', widthCaption: '77%' }
+        case 'xl': return { fontSizeH1: '2em', fontSizeP: '2.2em', widthCaption: '75%' }
       }
     }
   },
@@ -199,12 +199,11 @@ export default {
 
 <style>
   h1 {
-    font-family: 'Allerta Stencil', Roboto, Arial, sans-serif;
+    font-family: 'Gloria Hallelujah', Roboto, Arial, sans-serif;
     font-weight: 300;
-    line-height: 1.2em;
+    line-height: 1.5em;
     text-align: center;
-    margin: 20px auto;
-    color: #00ACC1;
+    color: #cccccc;
   }
 
   p {
