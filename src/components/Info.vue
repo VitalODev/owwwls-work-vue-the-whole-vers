@@ -103,7 +103,7 @@
         <v-snackbar
           v-model="snackbar"
           :multi-line="true"
-          :timeout="8000"
+          :timeout="6000"
           auto-height
           color="primary"
         >
@@ -139,8 +139,8 @@ export default {
     }
   },
   methods: {
-    popUpSnackbar () {
-      this.snackbar = true
+    popUpSnackbar (event) {
+      if (this.$store.getters.descriptionCategories[event]) this.snackbar = true
     }
   },
   computed: {
@@ -158,7 +158,7 @@ export default {
       }
     },
     descriptionCategory () {
-      return this.$store.getters.descriptionCategories[this.selectedCategory.toString()]
+      return this.$store.getters.descriptionCategories[this.selectedCategory]
     }
   },
   mounted () {

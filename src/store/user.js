@@ -65,8 +65,6 @@ export default {
       try {
         const user = await axios.post('/login', { email, password })
 
-        console.log(await axios.post('/login', { email, password }))
-
         if (user.data.info) {
           commit('setLoading', false)
           commit('setError', user.data.info.message)
