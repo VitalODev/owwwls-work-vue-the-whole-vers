@@ -4,7 +4,8 @@ import Home from '@/components/Home'
 import LogIn from '@/components/LogIn'
 import LogOut from '@/components/LogOut'
 import Contact from '@/components/Contact'
-import Info from '@/components/Info'
+import Blog from '@/components/Blog'
+import KoaVueAuthentication from '@/components/blog/KoaVueAuthentication'
 
 Vue.use(Router)
 
@@ -29,8 +30,12 @@ export default new Router({
       component: Contact
     },
     {
-      path: '/info',
-      component: Info
+      path: '/blog',
+      component: Blog
+    },
+    {
+      path: '/blog/koa-vue-authentication',
+      component: KoaVueAuthentication
     }
   ]
 })

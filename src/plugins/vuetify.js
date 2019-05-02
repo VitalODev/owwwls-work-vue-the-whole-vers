@@ -11,7 +11,7 @@ Vue.use(Vuetify, {
     info: '#B2DFDB',
     success: '#4CAF50',
     warning: '#FFC107',
-    beach: '#aad6df'
+    text: '#546E7A'
   },
   iconfont: 'md',
   breakpoint: {

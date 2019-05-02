@@ -21,13 +21,13 @@
 
         <v-divider></v-divider>
 
-        <v-list-tile :to="'/info'" ripple>
+        <v-list-tile :to="'/blog'" ripple>
           <v-list-tile-action>
-            <v-icon>info</v-icon>
+            <v-icon>build</v-icon>
           </v-list-tile-action>
 
           <v-list-tile-content>
-            <v-list-tile-title v-text="'info'"></v-list-tile-title>
+            <v-list-tile-title v-text="'blog'"></v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
 
@@ -105,9 +105,9 @@
 
         <v-divider vertical></v-divider>
 
-        <v-btn :to="'/info'" flat>
-          <v-icon color="auxiliary" left>info</v-icon>
-          info
+        <v-btn :to="'/blog'" flat>
+          <v-icon color="auxiliary" left>build</v-icon>
+          blog
         </v-btn>
 
         <v-divider vertical></v-divider>
@@ -178,11 +178,11 @@ export default {
     },
     computedStyle () {
       switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return { fontSizeH1: '1.4em', fontSizeP: '1.3em', widthCaption: '100%' }
-        case 'sm': return { fontSizeH1: '1.5em', fontSizeP: '1.5em', widthCaption: '90%' }
-        case 'md': return { fontSizeH1: '1.6em', fontSizeP: '1.7em', widthCaption: '80%' }
-        case 'lg': return { fontSizeH1: '1.7em', fontSizeP: '2em', widthCaption: '77%' }
-        case 'xl': return { fontSizeH1: '2em', fontSizeP: '2.2em', widthCaption: '75%' }
+        case 'xs': return { fontSizeH1: '1.6em', fontSizeH2: '1.4em', fontSizeH3: '1.2em', fontSizeP: '0.8em', widthCaption: '100%' }
+        case 'sm': return { fontSizeH1: '1.8em', fontSizeH2: '1.6em', fontSizeH3: '1.4em', fontSizeP: '1em', widthCaption: '90%' }
+        case 'md': return { fontSizeH1: '2em', fontSizeH2: '1.8em', fontSizeH3: '1.6em', fontSizeP: '1.2em', widthCaption: '80%' }
+        case 'lg': return { fontSizeH1: '2.2em', fontSizeH2: '2em', fontSizeH3: '1.8em', fontSizeP: '1.3em', widthCaption: '77%' }
+        case 'xl': return { fontSizeH1: '2.4em', fontSizeH2: '2.2em', fontSizeH3: '2em', fontSizeP: '1.4em', widthCaption: '75%' }
       }
     }
   },
@@ -199,19 +199,48 @@ export default {
 
 <style>
   h1 {
-    font-family: 'Gloria Hallelujah', Roboto, Arial, sans-serif;
-    font-weight: 300;
-    line-height: 1.5em;
+    font-family: Quicksand, Roboto, Arial, sans-serif;
+    line-height: 1.2em;
     text-align: center;
-    color: #cccccc;
+    margin: 20px auto;
+    color: #546E7A;
+  }
+
+  h2 {
+    font-family: Quicksand, Roboto, Arial, sans-serif;
+    line-height: 1.2em;
+    text-align: center;
+    margin: 20px auto;
+    color: #009688;
+  }
+
+  h3 {
+    font-family: Quicksand, Roboto, Arial, sans-serif;
+    line-height: 1.2em;
+    text-align: center;
+    margin: 20px auto;
+    color: #546E7A;
   }
 
   p {
-    font-family: 'Roboto Mono', Roboto, Arial, sans-serif;
-    font-weight: 300;
+    font-family: Quicksand, Roboto, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     text-align: justify;
-    margin-bottom: 25px;
+    margin: 20px auto;
     color: #546E7A;
+  }
+
+  code {
+    text-align: left;
+  }
+
+  .div-spacer {
+    text-align: center;
+  }
+
+  .v-breadcrumbs {
+    padding:6px 12px;
   }
 
   .v-navigation-drawer {
