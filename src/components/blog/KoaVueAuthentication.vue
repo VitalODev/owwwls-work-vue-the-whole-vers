@@ -27,7 +27,7 @@
           </v-breadcrumbs>
 
           <h2 :style="{ fontSize: computedStyle.fontSizeH2 }">Preparation</h2>
-          <p :style="{ fontSize: computedStyle.fontSizeP }">This article is a manual for the creation of an authentication system from this repository. It's implied that you're familiar with JavaScript, Koa.js, Vue.js, HTML, CSS because it won't be described here how these technologies work. Although I'm going to describe the whole process as thoroughly as possible.</p>
+          <p :style="{ fontSize: computedStyle.fontSizeP }">This article is a manual for the creation of an authentication system from this <a href="https://github.com/VitalODev/koa-vue-authentication" target="_blank">repository</a>. It's implied that you're familiar with JavaScript, Koa.js, Vue.js, HTML, CSS because it won't be described here how these technologies work. Although I'm going to describe the whole process as thoroughly as possible.</p>
           <p :style="{ fontSize: computedStyle.fontSizeP }">Why is 'reinforced' authentication? Let's talk a little about approaches to authentication. There're two most popular variants on the web. The first is based on the server session mechanism, the second on the transfer of a certain token. We'll use the second one as it's more universal because of its support by gadgets is greater. The next step is to determine where the token will be placed on the client side. Again, we have two commonly encountered options for this: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" target="_blank">localStorage</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" target="_blank">cookie</a>. In terms of authentication, the most important aspect which storage should be used is the security of storing data. Neither the first nor the second are perfect. LocalStorage suffers from a vulnerability known as <a href="https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting" target="_blank">XSS</a>. Cookies are subject to <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSRF" target="_blank">CSRF</a> attack. And what if a user authentication depends on local storage and cookies together? The task of hacking this mechanism on a distance becomes overly difficult. That's why this is 'reinforced' authentication.</p>
           <p :style="{ fontSize: computedStyle.fontSizeP }">If Node.js is not installed on the machine - install <a href="https://nodejs.org/uk/download/" target="_blank">it</a>. Also in this manual, as a more efficient alternative for <a href="https://docs.npmjs.com/about-npm/" target="_blank">npm</a>, the <a href="https://yarnpkg.com/lang/en/" target="_blank">Yarn</a> manager will be used to install external packages. We'll use <a href="https://eslint.org/" target="_blank">ESLint</a> with Vue.js rules as a linter for both Vue.js and Koa.js.</p>
           <h2 :style="{ fontSize: computedStyle.fontSizeH2 }">Server-side</h2>
@@ -674,7 +674,7 @@
     }
   }
           </code>
-          <p :style="{ fontSize: computedStyle.fontSizeP }">We use the help of <a href="https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards" target="_blank">Navigation Guard</a>. That's all! 'Reinforced' authentication has been completed. Good luck to you and let an audience of your site be under reliable protection! And put a star on GitHub, if the manual was useful.</p>
+          <p :style="{ fontSize: computedStyle.fontSizeP }">We use the help of <a href="https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards" target="_blank">Navigation Guard</a>. That's all! 'Reinforced' authentication has been completed. Good luck to you and let an audience of your site be under reliable protection! And put a star on <a href="https://github.com/VitalODev/koa-vue-authentication" target="_blank">GitHub</a>, if the manual was useful.</p>
         </div>
       </v-flex>
     </v-layout>
@@ -684,11 +684,6 @@
 <script>
 export default {
   name: 'KoaVueAuthentication',
-  props: [ 'computedStyle' ],
-  data () {
-    return {
-
-    }
-  }
+  props: [ 'computedStyle' ]
 }
 </script>
