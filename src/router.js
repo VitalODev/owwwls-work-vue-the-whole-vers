@@ -6,6 +6,7 @@ import LogOut from '@/components/LogOut'
 import Contact from '@/components/Contact'
 import Blog from '@/components/Blog'
 import KoaVueAuthentication from '@/components/blog/KoaVueAuthentication'
+import VanillaGlobalStateInReact from '@/components/blog/VanillaGlobalStateInReact'
 
 Vue.use(Router)
 
@@ -36,6 +37,10 @@ export default new Router({
     {
       path: '/blog/koa-vue-authentication',
       component: KoaVueAuthentication
+    },
+    {
+      path: '/blog/react-vanilla-global-state',
+      component: VanillaGlobalStateInReact
     }
   ]
 })

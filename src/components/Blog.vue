@@ -93,9 +93,20 @@
           to="/blog/koa-vue-authentication"
           v-if="selectedCategory == 'all' || selectedCategory == 'vue' || selectedCategory == 'koa'"
         >
-          <div class="posts">
+          <div class="posts deep-purple lighten-2 elevation-8">
             <h1 :style="{ fontSize: computedStyle.fontSizeH1 }">
               Reinforced authentication with Koa.js and Vue.js
+            </h1>
+          </div>
+        </router-link>
+
+        <router-link
+          to="/blog/react-vanilla-global-state"
+          v-if="selectedCategory == 'all' || selectedCategory == 'react'"
+        >
+          <div class="posts blue lighten-2 elevation-8">
+            <h1 :style="{ fontSize: computedStyle.fontSizeH1 }">
+              React vanilla (without Redux) global state on hooks
             </h1>
           </div>
         </router-link>
@@ -123,7 +134,7 @@ export default {
   },
   computed: {
     categories () {
-      return ['all', 'vue', 'koa']
+      return ['all', 'vue', 'koa', 'react']
     }
   },
   mounted () {

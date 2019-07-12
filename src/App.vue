@@ -55,7 +55,7 @@
       color="primary"
     >
       <span class="pb-2">
-        <svg version="1.1" width="110px" viewBox="0 0 204 35" fill="#C5E1A5">
+        <svg version="1.1" width="120px" viewBox="0 0 204 35" fill="#FFEB3B">
           <g>
             <path d="M3.6,11.8C5.3,10,7.4,9,9.9,9c1.2,0,2.4,0.2,3.4,0.7c1.1,0.5,2,1.2,2.8,2c0.8,0.9,1.4,1.9,1.9,3c0.5,1.2,0.7,2.4,0.7,3.7c0,1.3-0.2,2.6-0.7,3.7c-0.4,1.2-1.1,2.2-1.9,3c-0.8,0.9-1.7,1.5-2.8,2c-1.1,0.5-2.2,0.7-3.5,0.7c-1.3,0-2.4-0.2-3.5-0.7c-1.1-0.5-2-1.2-2.8-2c-0.8-0.9-1.4-1.9-1.9-3c-0.4-1.2-0.7-2.4-0.7-3.7C1.1,15.9,2,13.6,3.6,11.8zM9.9,12.2c-1.7,0-3,0.6-4,1.8c-1,1.2-1.5,2.7-1.5,4.6c0,1.9,0.5,3.4,1.5,4.6c1,1.2,2.4,1.8,4,1.8c1.7,0,3.1-0.6,4.1-1.8c1-1.2,1.5-2.7,1.5-4.6c0-1.9-0.5-3.4-1.5-4.6C13,12.8,11.6,12.2,9.9,12.2z"></path>
             <path d="M37.7,25c-1.8-1.5-3-2.9-3.6-4.4c-0.6-1.5-1-3.7-1.3-6.5h-0.4c-0.3,2.9-0.7,5.1-1.3,6.5c-0.6,1.5-1.8,2.9-3.6,4.4c-1.7-0.9-3-2.4-3.9-4.7c-1-2.3-1.5-5.1-1.7-8.4l-0.3-5.6h3.2l0.3,5.5c0.2,4.2,1,7.2,2.3,9.1c0.4-0.4,0.7-0.9,1-1.5c0.3-0.5,0.6-1.1,0.8-1.8c0.2-0.7,0.4-1.2,0.6-1.7c0.2-0.5,0.3-1.1,0.4-1.9c0.1-0.8,0.2-1.3,0.3-1.7c0-0.4,0.1-0.9,0.2-1.7c0.1-0.8,0.1-1.2,0.2-1.3h3.5c0,0.1,0.1,0.5,0.2,1.3c0.1,0.8,0.1,1.4,0.2,1.7c0,0.4,0.1,0.9,0.3,1.7c0.1,0.8,0.3,1.4,0.4,1.9c0.2,0.5,0.3,1.1,0.6,1.7c0.2,0.6,0.5,1.2,0.8,1.8c0.3,0.5,0.6,1,1,1.5c1.3-1.9,2.1-4.9,2.3-9.1l0.3-5.5h3.2l-0.3,5.6c-0.2,3.3-0.7,6.1-1.7,8.4C40.7,22.5,39.4,24.1,37.7,25z"></path>
@@ -123,22 +123,32 @@
       <v-divider vertical></v-divider>
 
       <v-toolbar-items v-if="!loggedIn">
-        <v-btn style="padding-right: 0" :to="'/login'" class="baumans" color="white" flat>
+        <v-btn
+          style="padding-right: 0"
+          :to="'/login'"
+          class="baumans lime darken-3 black--text font-weight-black"
+          flat
+        >
           LOG IN
-          <v-icon color="auxiliary" right>exit_to_app</v-icon>
+          <v-icon right class="pr-3">exit_to_app</v-icon>
         </v-btn>
       </v-toolbar-items>
 
       <v-toolbar-items v-else>
-        <v-btn style="padding-right: 0" :to="'/logout'" class="baumans" color="white" flat>
+        <v-btn
+          style="padding-right: 0"
+          :to="'/logout'"
+          class="baumans lime darken-3 black--text font-weight-black"
+          flat
+        >
           LOG OUT
-          <v-icon color="auxiliary" right>exit_to_app</v-icon>
+          <v-icon right class="pr-3">exit_to_app</v-icon>
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
 
     <v-content>
-        <router-view :computedStyle="computedStyle"></router-view>
+      <router-view :computedStyle="computedStyle"></router-view>
     </v-content>
 
     <template v-if="error">
@@ -203,7 +213,7 @@ export default {
     line-height: 1.2em;
     text-align: center;
     margin: 20px auto;
-    color: #546E7A;
+    color: #0097A7;
   }
 
   h2 {
@@ -241,6 +251,10 @@ export default {
 
   .v-breadcrumbs {
     padding:6px 12px;
+  }
+
+  .v-breadcrumbs__item {
+    color: #FF9800;
   }
 
   .v-navigation-drawer {
