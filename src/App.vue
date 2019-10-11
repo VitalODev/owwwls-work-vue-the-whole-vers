@@ -152,7 +152,7 @@
         <v-btn
           style="padding-right: 0"
           :to="'/login'"
-          class="baumans lime darken-3 black--text font-weight-black"
+          class="baumans darken-3 black--text font-weight-black"
           flat
         >
           LOG IN
@@ -164,7 +164,7 @@
         <v-btn
           style="padding-right: 0"
           :to="'/logout'"
-          class="baumans lime darken-3 black--text font-weight-black"
+          class="baumans darken-3 purple--text font-weight-black"
           flat
         >
           LOG OUT
