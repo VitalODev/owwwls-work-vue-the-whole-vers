@@ -8,6 +8,8 @@
           <Cook></Cook>
 
           <h2>Welcome to the kitchen! Fresh JavaScript is being boiled here...</h2>
+
+          <Player :computedStyle="computedStyle"></Player>
         </div>
       </v-flex>
     </v-layout>
@@ -15,29 +17,30 @@
 </template>
 
 <script>
-import Cook from './animations/Cook'
+import Cook from "./animations/Cook";
+import Player from "./Player";
 export default {
-  name: 'Home',
-  props: ['computedStyle'],
-  components: { Cook }
-}
+  name: "Home",
+  props: ["computedStyle"],
+  components: { Cook, Player }
+};
 </script>
 
 <style scoped>
-  h1 {
-    font-family: 'Baumans', cursive;
-    margin: 25px auto;
-  }
+h1 {
+  font-family: "Baumans", cursive;
+  margin: 25px auto;
+}
 
-  h2 {
-    font-family: Quicksand, Roboto, Arial, sans-serif;
-    font-size: 2em;
-    font-weight: 400;
-    margin: 30px auto;
-    color: #546E7A;
-  }
+h2 {
+  font-family: Quicksand, Roboto, Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 30px auto;
+  color: #546e7a;
+}
 
-  #svg-caption {
-    margin: 15px auto 12px;
-  }
+#svg-caption {
+  margin: 15px auto 12px;
+}
 </style>
